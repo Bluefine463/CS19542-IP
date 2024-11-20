@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "name":" Software Engineer ",
+        "price": "Intern",
+        "image": "img/google.png",
+        "description": "As a Software Engineer at Google, you will work on solving complex and large-scale engineering challenges, building innovative solutions, and contributing to technology that impacts billions of users globally. Your contributions will empower people to connect, discover, and succeed in an increasingly digital world."
+    },
+    {
+        "id": 2,
+        "name":" Software Engineer ",
+        "price": "Intern",
+        "image": "img/cyrad.jpeg",
+        "description": "As a Software Engineer at Google, you will work on solving complex and large-scale engineering challenges, building innovative solutions, and contributing to technology that impacts billions of users globally. Your contributions will empower people to connect, discover, and succeed in an increasingly digital world."
+    },
+    {
+        "id": 3,
+        "name":" Product Engineer ",
+        "price": "Intern",
+        "image": "img/ibm.png",
+        "description": "As a Software Engineer at Google, you will work on solving complex and large-scale engineering challenges, building innovative solutions, and contributing to technology that impacts billions of users globally. Your contributions will empower people to connect, discover, and succeed in an increasingly digital world."
+    },
+    {
+        "id": 4,
+        "name":" Software Engineer ",
+        "price": "Intern",
+        "image": "img/amazon.png",
+        "description": "As a Software Engineer at Google, you will work on solving complex and large-scale engineering challenges, building innovative solutions, and contributing to technology that impacts billions of users globally. Your contributions will empower people to connect, discover, and succeed in an increasingly digital world."
+    },
+    {
+        "id": 5,
+        "name":" Software Engineer ",
+        "price": "Intern",
+        "image": "img/ibm.png",
+        "description": "As a Software Engineer at Google, you will work on solving complex and large-scale engineering challenges, building innovative solutions, and contributing to technology that impacts billions of users globally. Your contributions will empower people to connect, discover, and succeed in an increasingly digital world."
+    },
+    {
+        "id": 6,
+        "name":" Product Engineer ",
+        "price": "Intern",
+        "image": "img/google.png",
+        "description": "As a Software Engineer at Google, you will work on solving complex and large-scale engineering challenges, building innovative solutions, and contributing to technology that impacts billions of users globally. Your contributions will empower people to connect, discover, and succeed in an increasingly digital world."
+    },
+    {
+        "id": 7,
+        "name":" Product Engineer ",
+        "price": "Intern",
+        "image": "img/amazon.png",
+        "description": "As a Software Engineer at Google, you will work on solving complex and large-scale engineering challenges, building innovative solutions, and contributing to technology that impacts billions of users globally. Your contributions will empower people to connect, discover, and succeed in an increasingly digital world."
+    } ,
+    {
+        "id": 8,
+        "name":" Product Engineer ",
+        "price": "Intern",
+        "image": "img/microsoft.png",
+        "description": "As a Software Engineer at Google, you will work on solving complex and large-scale engineering challenges, building innovative solutions, and contributing to technology that impacts billions of users globally. Your contributions will empower people to connect, discover, and succeed in an increasingly digital world."
+    }
+
+]

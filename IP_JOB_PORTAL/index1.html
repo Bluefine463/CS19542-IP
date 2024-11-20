@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">JOBS LIST</div>
+        <!-- Add Search Bar -->
+        <input type="text" id="searchBar" placeholder="Search for jobs..." style="width: 100%; padding: 10px; margin: 10px 0;">
+        <div class="listProduct"></div>
+    </div>
+
+    <script>
+        let products = null;
+
+        // Fetch data from JSON
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML(data); // Initialize with all data
+            });
+
+        // Function to add data dynamically to HTML
+        function addDataToHTML(filteredProducts) {
+            let listProductHTML = document.querySelector('.listProduct');
+            listProductHTML.innerHTML = ""; // Clear previous data
+
+            if (filteredProducts.length > 0) {
+                filteredProducts.forEach(product => {
+                    let newProduct = document.createElement('a');
+                    newProduct.href = './detail.html?id=' + product.id;
+                    newProduct.classList.add('item');
+                    newProduct.innerHTML = `
+                        <img src="${product.image}" alt="">
+                        <h2>${product.name}</h2>
+                        <div class="price">${product.price}</div>`;
+                    listProductHTML.appendChild(newProduct);
+                });
+            } else {
+                listProductHTML.innerHTML = "<p>No jobs found</p>"; // Show message if no jobs match
+            }
+        }
+
+        // Add event listener for the search bar
+        const searchBar = document.getElementById('searchBar');
+        searchBar.addEventListener('input', () => {
+            const searchTerm = searchBar.value.toLowerCase();
+            const filteredProducts = products.filter(product =>
+                product.name.toLowerCase().includes(searchTerm)
+            );
+            addDataToHTML(filteredProducts); // Update displayed jobs
+        });
+    </script>
+</body>
+</html>
